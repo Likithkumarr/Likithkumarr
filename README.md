@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Likith Kumar</h1>
+﻿<h1 align="center">Hi 👋, I'm Likith Kumar</h1>
 
 <h3 align="center">Generative AI Developer &nbsp;|&nbsp; Python Backend Developer &nbsp;|&nbsp; AI Engineer</h3>
 
@@ -9,6 +9,10 @@
   &nbsp;
   <a href="https://likithkumarr.github.io/Portfolio/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/>
+  </a>
+  &nbsp;
+  <a href="https://likithkumarr.github.io/Likithkumarr/" target="_blank">
+    <img src="https://img.shields.io/badge/Animated_Profile_Site-6C63FF?style=for-the-badge&logoColor=white" alt="Animated Profile Site"/>
   </a>
   &nbsp;
   <a href="https://github.com/Likithkumarr" target="_blank">
@@ -107,7 +111,7 @@ I'm a **Computer Science & Engineering graduate (B.Tech, 2025)** with a strong f
 ### 🔍 [AI Resume Analyzer — RAG](https://github.com/Likithkumarr/AI-Resume-Analyzer-RAG)
 > Privacy-first AI resume analyzer using a Two-Stage Hybrid Architecture for deterministic ATS scoring and qualitative HR feedback.
 
-- Deterministic ATS skill-matching using **RapidFuzz** (`token_set_ratio`) with smart alias normalization (e.g., "JS" → "JavaScript")
+- Deterministic ATS skill-matching using **RapidFuzz** (`token_set_ratio`) with smart alias normalization
 - Qualitative HR feedback (Strengths, Weaknesses, Hiring Recommendation) exported to PDF
 - 100% local & private — runs entirely via **Ollama (Llama 3.2)**
 
@@ -116,45 +120,42 @@ I'm a **Computer Science & Engineering graduate (B.Tech, 2025)** with a strong f
 ---
 
 ### 🗄️ [PDF Chatbot — PostgreSQL + pgvector + Valkey](https://github.com/Likithkumarr/Pdf_ChatBot_PostGreSQl_Valkey)
-> Production-ready, scalable RAG chatbot using PostgreSQL for vector storage and Valkey for sub-millisecond response caching.
+> Production-ready, scalable RAG chatbot using PostgreSQL for vector storage and Valkey for sub-millisecond caching.
 
-- Multi-format document ingestion: PDF, DOCX, TXT, and images via **Tesseract OCR**
+- Multi-format ingestion: PDF, DOCX, TXT, images via **Tesseract OCR**
 - **pgvector** for semantic vector storage inside PostgreSQL
 - **Valkey** caching delivering <0.01s latency for repeated queries
-- Long-term memory across sessions via **Mem0** and an RLHF feedback loop (👍/👎)
+- Long-term memory via **Mem0** and RLHF feedback loop (👍/👎)
 
 `Python` `PostgreSQL` `pgvector` `Valkey` `Mem0` `Streamlit` `Docker` `Tesseract OCR`
 
 ---
 
 ### 🤖 [ChatGPT RAG App — Azure OpenAI + ChromaDB](https://github.com/Likithkumarr/Chatgpt-Rag-App-ChromaDB)
-> Multi-user AI chatbot with a full RAG pipeline and a built-in RLHF feedback loop powered by Azure OpenAI.
+> Multi-user AI chatbot with a full RAG pipeline and built-in RLHF feedback loop powered by Azure OpenAI.
 
 - Per-user data isolation with **bcrypt**-secured authentication
-- **Dual-LLM logic**: standard model (temp=0.3) vs. creative fallback (temp=0.9) triggered on negative feedback
-- RLHF loop: thumbs-down regenerates responses; thumbs-up saves answers to history
-- Document ingestion including image OCR via **Tesseract**
+- **Dual-LLM logic**: standard model (temp=0.3) vs. creative fallback (temp=0.9)
+- RLHF loop: thumbs-down regenerates; thumbs-up saves to history
 
-`Python` `LangChain` `Azure OpenAI` `ChromaDB` `Streamlit` `Tesseract OCR` `bcrypt`
+`Python` `LangChain` `Azure OpenAI` `ChromaDB` `Streamlit` `bcrypt`
 
 ---
 
 ### 💬 [Microsoft Teams RAG Chatbot](https://github.com/Likithkumarr/Rag_ChatBot_Teams)
-> Enterprise-grade RAG chatbot natively integrated with Microsoft Teams using the Microsoft 365 Agents SDK and Azure OpenAI.
+> Enterprise-grade RAG chatbot natively integrated with Microsoft Teams via the Microsoft 365 Agents SDK.
 
 - Grounded answers strictly from a custom knowledge base — minimizes hallucinations
 - Built with the **Microsoft 365 Agents SDK** and **GPT-4o** embeddings
-- Supports local testing via the Microsoft Agents Playground
 
 `Python` `Microsoft 365 Agents SDK` `Azure OpenAI (GPT-4o)` `ChromaDB`
 
 ---
 
 ### 🧑‍💼 [Customer Support RAG Chatbot](https://github.com/Likithkumarr/Customer_Support_RAG_Chatbot)
-> Fully local, offline customer support chatbot using LangChain and Ollama to answer queries from custom support documents.
+> Fully local, offline customer support chatbot using LangChain and Ollama.
 
-- Entirely offline — no cloud API calls required
-- Loads PDF and TXT support documents for semantic retrieval
+- 100% offline — no cloud API calls required
 - Powered by local LLMs via **Ollama** (phi3, mistral) with **nomic-embed-text** embeddings
 
 `Python` `LangChain` `Ollama` `ChromaDB` `Streamlit` `PyPDF`
@@ -162,22 +163,21 @@ I'm a **Computer Science & Engineering graduate (B.Tech, 2025)** with a strong f
 ---
 
 ### 🧩 [Multi-Agent NL-to-SQL Visualization System](https://github.com/Likithkumarr/Multi-Agent-NL-to-SQL-Visualization-System)
-> Multi-agent system built with LangGraph that converts natural language queries into SQL, executes them on DuckDB, and auto-generates charts.
+> Multi-agent system built with LangGraph that converts natural language to SQL and auto-generates charts.
 
-- **LangGraph** workflow for multi-agent intent routing and query execution
+- **LangGraph** workflow for multi-agent intent routing
 - Natural language → SQL → **DuckDB** execution pipeline
-- Automatic data visualization using **Pandas** and **Matplotlib**
-- User authentication and query history tracking
+- Auto data visualization using Pandas & Matplotlib
 
 `Python` `LangGraph` `DuckDB` `Pandas` `Matplotlib` `Streamlit`
 
 ---
 
 ### 🔄 [Reinforcement Learning from Human Feedback (RLHF)](https://github.com/Likithkumarr/Reinforcement-Learning-From-Human-FeedBack)
-> Lightweight interactive demo showcasing the core mechanics of an RLHF loop using Azure OpenAI.
+> Interactive demo showcasing core RLHF mechanics with Azure OpenAI.
 
-- Human-in-the-loop feedback: 👍 advances, 👎 triggers response regeneration with alternate parameters
-- Local feedback persistence in JSON for analysis and review
+- 👍 advances; 👎 triggers response regeneration with alternate parameters
+- Local feedback persistence in JSON for analysis
 
 `Python` `Azure OpenAI` `Streamlit`
 
@@ -206,6 +206,10 @@ I'm a **Computer Science & Engineering graduate (B.Tech, 2025)** with a strong f
   &nbsp;
   <a href="https://likithkumarr.github.io/Portfolio/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-Visit-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/>
+  </a>
+  &nbsp;
+  <a href="https://likithkumarr.github.io/Likithkumarr/" target="_blank">
+    <img src="https://img.shields.io/badge/Animated_Profile_Site-6C63FF?style=for-the-badge&logoColor=white" alt="Animated Profile"/>
   </a>
   &nbsp;
   <a href="https://github.com/Likithkumarr" target="_blank">
